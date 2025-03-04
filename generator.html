@@ -12,14 +12,45 @@
       height: 50vh;
     }
   </style>
+ <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Document</title>
+  <link rel='stylesheet' href='style.css'>
+  <link rel='stylesheet' href='font-awesome.css'>
 </head>
 
 <body>
   <textarea name='textarea' id='' cols='30' rows='10'></textarea>
   <button>Get</button>
   <script src='let _textArea=document.querySelector("textarea"),_btn=document.querySelector("button");_btn.addEventListener("click",()=>{let e=_textArea.value,t=document.createElement("div");t.innerHTML=e;let r=t.querySelectorAll("img"),c=new Array;r.forEach(e=>c.push(`"${e.src}"`)),_textArea.value=`<script type="text/javascript">const _chapterImage = [${c.join(", ")}]</script>`});'></script>
-
-<script type='text/javascript'>/*<![CDATA[*/(function(e,t){function n(e){return new Promise((t,n)=>{let c=new Image;c.onload=(()=>t({item:c,check:!0})),c.onerror=(e=>n({item:c,check:e})),c.src=e})}e&&t&&"object"==typeof _chapterImage&&async function(c){for(let o=0;o<c.length;o++){const a=c[o];await n(a).then(t=>{e.appendChild(t.item)}).catch(t=>{e.appendChild(t.item),console.log("error")}),o===c.length-1&&(t.style.display="none")}}(_chapterImage)})(document.getElementById("chapterImage"),document.getElementById("chapterImageLoad"));/*]]>*/</script>
+<div id='chapterImage'></div>
+  <div id='chapterImageLoad'><i class='fas fa-sync fa-spin'></i></div>
+  <script type="text/javascript">
+    const _chapterImage = [
+      "https://img.statically.io/img/kcast/cdn.komikcast.com/wp-content/img/K/Kaguya-sama_wa_Kokurasetai/274/000.png",
+      "https://img.statically.io/img/kcast/cdn.komikcast.com/wp-content/img/K/Kaguya-sama_wa_Kokurasetai/274/001.jpg",
+      "https://img.statically.io/img/kcast/cdn.komikcast.com/wp-content/img/K/Kaguya-sama_wa_Kokurasetai/274/002.jpg",
+      "https://img.statically.io/img/kcast/cdn.komikcast.com/wp-content/img/K/Kaguya-sama_wa_Kokurasetai/274/003.jpg",
+      "https://img.statically.io/img/kcast/cdn.komikcast.com/wp-content/img/K/Kaguya-sama_wa_Kokurasetai/274/004.jpg",
+      "https://img.statically.io/img/kcast/cdn.komikcast.com/wp-content/img/K/Kaguya-sama_wa_Kokurasetai/274/005.jpg",
+      "https://img.statically.io/img/kcast/cdn.komikcast.com/wp-content/img/K/Kaguya-sama_wa_Kokurasetai/274/006.jpg",
+      "https://img.statically.io/img/kcast/cdn.komikcast.com/wp-content/img/K/Kaguya-sama_wa_Kokurasetai/274/007.jpg",
+      "https://img.statically.io/img/kcast/cdn.komikcast.com/wp-content/img/K/Kaguya-sama_wa_Kokurasetai/274/008.jpg",
+      "https://img.statically.io/img/kcast/cdn.komikcast.com/wp-content/img/K/Kaguya-sama_wa_Kokurasetai/274/009.jpg",
+      "https://img.statically.io/img/kcast/cdn.komikcast.com/wp-content/img/K/Kaguya-sama_wa_Kokurasetai/274/010.jpg",
+      "https://img.statically.io/img/kcast/cdn.komikcast.com/wp-content/img/K/Kaguya-sama_wa_Kokurasetai/274/011.jpg",
+      "https://img.statically.io/img/kcast/cdn.komikcast.com/wp-content/img/K/Kaguya-sama_wa_Kokurasetai/274/012.jpg",
+      "https://img.statically.io/img/kcast/cdn.komikcast.com/wp-content/img/K/Kaguya-sama_wa_Kokurasetai/274/013.jpg",
+      "https://img.statically.io/img/kcast/cdn.komikcast.com/wp-content/img/K/Kaguya-sama_wa_Kokurasetai/274/014.jpg",
+      "https://img.statically.io/img/kcast/cdn.komikcast.com/wp-content/img/K/Kaguya-sama_wa_Kokurasetai/274/015.jpg",
+      "https://img.statically.io/img/kcast/cdn.komikcast.com/wp-content/img/K/Kaguya-sama_wa_Kokurasetai/274/016.jpg",
+      "https://img.statically.io/img/kcast/cdn.komikcast.com/wp-content/img/K/Kaguya-sama_wa_Kokurasetai/274/017.jpg",
+      "https://img.statically.io/img/kcast/cdn.komikcast.com/wp-content/img/K/Kaguya-sama_wa_Kokuras/etai/274/018.jpg",
+      "https://img.statically.io/img/kcast/cdn.komikcast.com/wp-content/img/K/Kaguya-sama_wa_Kokurasetai/274/999.jpg"
+    ]
+  </script>
+  <script src='main.min.js'></script>
 
 </body>
 
