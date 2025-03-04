@@ -6,6 +6,12 @@
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
   <title>Convert Image</title>
+  <style>
+    textarea {
+      width: 100%;
+      height: 50vh;
+    }
+  </style>
 </head>
 
 <body>
@@ -14,4 +20,4 @@
   <script src='let _textArea=document.querySelector("textarea"),_btn=document.querySelector("button");_btn.addEventListener("click",()=>{let e=_textArea.value,t=document.createElement("div");t.innerHTML=e;let r=t.querySelectorAll("img"),c=new Array;r.forEach(e=>c.push(`"${e.src}"`)),_textArea.value=`<script type="text/javascript">const _chapterImage = [${c.join(", ")}]</script>`});'></script>
 </body>
 
-</html>
+  
